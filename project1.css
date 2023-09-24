@@ -1,0 +1,985 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-header{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: black;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    height: 10%;
+    padding: 10px;
+}
+
+
+header img{
+    width: 20%;
+    margin-right: 10px;
+}
+
+header #sign-in{
+    display: inline-block;
+    transition: all linear 0.1s;
+    padding: 2px;
+}
+
+header #sign-in i{
+    font-size: 28px;
+    margin-left: 17px;
+}
+
+header #sign-in a{
+    text-decoration: none;
+    color: white;
+}
+
+header #sign-in a h5{
+    font-size: 20px;
+}
+
+header #sign-in:hover{
+    box-shadow: 0px 2px 9px 8px rgba(255, 255, 255, 0.298);
+}
+
+@media (max-width:1200px){
+
+    header{
+        padding: 5px;
+        height: 12%;
+    }
+
+    header img{
+        margin-bottom: 10px;
+    }
+    #list{
+        font-size: 10px;
+        width: 500px;
+        margin-bottom: 5px;
+    }
+
+    #search{
+        margin-bottom: 5px;
+    }
+
+    #sign-in i{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:992px){
+    header{
+        padding: 3px;
+        height: 7%;
+    }
+    #list{
+        width: 480px;
+    }
+    #line{
+        display: none;
+    }
+    #search h4{
+        font-size: 0px;
+        margin-top: 3px;
+    }
+    header img{
+        display: none;
+    }
+    header #sign-in i{
+        display: none;
+    }
+    #search{
+        margin-left: 10px;
+    }
+    header #sign-in a h5{
+        font-size: 15px;
+        width: 50px;
+    }
+
+    .container #topic h1{
+        width: 100%;
+    }
+
+    .container #arko{
+        margin-top: 20px;
+    }
+
+    .container #arko #before{
+        width: 286px;
+    }
+
+    .container #arko #before #shade{
+        width: 286px;
+    }
+
+    .container #arko #volcano{
+        width: 286px;
+    }
+
+    .container #arko #volcano #shade{
+        width: 286px;
+    }
+
+    #grid #salute #text{
+        top: 140px;
+    }
+
+    #grid #coma #text{
+        top: 140px;
+    }
+
+    #grid #child #text{
+        top: 140px;
+    }
+
+    #business #nigga h2{
+        top: 360px;
+    }
+
+    #business #old h2{
+        top: 360px;
+    }
+}
+
+@media (max-width:600px){
+    header{
+        width: 100vw;
+        padding: 0px;
+        height: 5%;
+    }
+
+    header #head{
+        width: 100vw;
+    }
+    header img{
+        display: none;
+    }
+    header #list{
+        display: none;
+    }
+    header #sign-in a h5{
+        font-size: 10px;
+        width: 50px;
+    }
+    header #search{
+        width:60px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .container #topic h1{
+        width: 100%;
+    }
+
+    .container #train{
+        width: 100%;
+        
+    }
+
+    .container #train #shade{
+        width: 100%;
+    }
+
+    .container #train h3{
+        width: 100vw;
+    }
+
+    .container #train p{
+        width: 80vw;
+        bottom: 30px;
+        font-size: 15px;
+    }
+
+    .container #aru #trump{
+        background-image: none;
+        height: 50px;
+    }
+
+    .container #aru #trump h5{
+        color: rgb(54, 54, 54);
+        top: 12px;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .container #aru #trump i{
+        display: none;
+
+    }
+    .container #aru #trump p{
+        display: none;
+        
+    }
+
+    .container #aru #trump #shade{
+        width: 98vw;
+        height: 50px;
+    }
+
+    .container #aru #we{
+        background-image: none;
+        height: 50px;
+    }
+
+    .container #aru #we h5{
+        color: rgb(54, 54, 54);
+        top: 12px;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .container #aru #we i{
+        display: none;
+
+    }
+    .container #aru #we p{
+        display: none;
+        
+    }
+
+    .container #aru #we #shade{
+        width: 98vw;
+        height: 50px;
+    }
+
+    .container #arko #before{
+        background-image: none;
+        height: 50px;
+    }
+
+    .container #arko #before h5{
+        color: rgb(54, 54, 54);
+        top: 12px;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .container #arko #before i{
+        display: none;
+
+    }
+    .container #arko #before p{
+        display: none;
+        
+    }
+
+    .container #arko #before #shade{
+        width: 98vw;
+        height: 50px;
+    }
+
+    .container #arko #volcano{
+        background-image: none;
+        height: 50px;
+    }
+
+    .container #arko #volcano h5{
+        color: rgb(54, 54, 54);
+        top: 12px;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .container #arko #volcano i{
+        display: none;
+
+    }
+    .container #arko #volcano p{
+        display: none;
+        
+    }
+
+    .container #arko #volcano #shade{
+        width: 98vw;
+        height: 50px;
+    }
+
+    .container #grid{
+        display: inline;
+    }
+
+    .container #grid #salute{
+        background-image: none;
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    .container #grid #salute #text{
+        width: 100vw;
+        top: 0px;
+        margin-top: 10px;
+    }
+
+    .container #grid #coma{
+        background-image: none;
+        height: 80px;
+    }
+
+    .container #grid #coma #text{
+        width: 100vw;
+        top: 0px;
+        margin-top: 120px;
+    }
+
+    .container #grid #child{
+        background-image: none;
+        height: 80px;
+    }
+
+    .container #grid #child #text{
+        width: 100vw;
+        top: 0px;
+        margin-top: 200px;
+    }
+
+    #top{
+        margin-top: 300px;
+    }
+
+    .weather {
+        display: none;
+    }
+
+    .text-one{
+        color: white;
+    }
+
+    #reels #three-reels #first-reel{
+        width: 100vw;
+    }
+
+    #reels #three-reels #third-reel{
+        display: none;
+    }
+
+    #reels #three-reels #second-reel{
+        display: none;
+    }
+
+    #business #nigga{
+        width: 100vw;
+    }
+
+    #business #old{
+        display: none;
+    }
+}
+
+#head{
+    display: flex;
+    align-items: center;
+}
+
+#line{
+    color: rgb(121, 121, 121);
+    font-size: 30px;
+    margin-left: -200px;
+    margin-right: 5px;
+}
+
+#list{
+    list-style-type: none;
+    position: relative;
+}
+
+#list li{
+    display: inline-block;
+    transition: all linear 0.1s;
+}
+
+#list li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav{
+    float: right;
+}
+
+#list li:first-child:hover{
+    box-shadow: 0px 2px 10px 9px rgba(255, 255, 255, 0.493);
+}
+
+#list li:nth-child(2):hover{
+    box-shadow: 0px 2px 10px 9px rgba(255, 0, 0, 0.493);
+}
+
+#list li:nth-child(3):hover{
+    box-shadow: 0px 2px 10px 9px rgba(251, 255, 0, 0.493);
+}
+
+#list li:nth-child(4):hover{
+    box-shadow: 0px 2px 10px 9px rgba(166, 18, 166, 0.493);
+}
+
+#list li:nth-child(5):hover{
+    box-shadow: 0px 2px 10px 9px rgba(0, 221, 255, 0.493);
+}
+
+#list li:nth-child(6):hover{
+    box-shadow: 0px 2px 10px 9px rgba(0, 51, 255, 0.493);
+}
+
+#list li:nth-child(7):hover{
+    box-shadow: 0px 2px 10px 9px rgba(105, 59, 231, 0.493);
+}
+
+#list li:last-child{
+    font-size: 22px;
+    height: 20px;
+    position: absolute;
+    top: -3px;
+}
+
+#list li:last-child:hover{
+    box-shadow: 0px 2px 10px 9px rgba(255, 255, 255, 0.493);
+}
+
+#search{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.505);
+    margin-left: 100px;
+    position: relative;
+    padding: 10px;
+}
+
+#search i{
+    position: absolute;
+    top: 25%;
+}
+
+#search h4{
+    color: white;
+    margin-left: 30px;
+}
+
+#search:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.658);
+}
+
+.container{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#topic{
+    padding-top: 10px;
+}
+
+#topic h1{
+    display: inline-block;
+    margin-right: 800px;
+}
+
+#topic h2{
+    display: inline-block;
+    color: #818181;
+}
+
+#train{
+    margin-right: 15px;
+    display:inline-block;
+    margin-top: 20px;
+    background-image: url(train.jpeg);
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+#train #shade{
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.411));
+}
+
+#train h3{
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 70px;
+    margin-bottom: 20px;
+}
+
+#train p{
+    position: absolute;
+    color: rgb(205, 205, 205);
+    bottom: 30px;
+    margin: 10px;
+}
+
+#train i{
+    position: absolute;
+    bottom: 5px;
+    margin: 10px;
+    color: red;
+}
+
+
+#train #as{
+    position: absolute;
+    bottom: 3px;
+    margin-left: 30px;
+}
+
+#train:hover #shade{
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(71, 71, 71, 0.411));
+}
+
+#aru{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+#trump{
+    position: relative;
+    background-image: url(trump.jpeg);
+    width: 300px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+#trump #shade{
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.411));
+}
+
+#trump:hover #shade{
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(71, 71, 71, 0.411));
+}
+
+#aru #trump h5{
+    position: absolute;
+    color: white;
+    padding: 10px;
+    bottom: 15px;
+}
+
+#aru #trump i{
+    position: absolute;
+    bottom: -5px;
+    margin: 10px;
+    color: rgb(51, 0, 255);
+}
+
+#aru #trump #us{
+    color: rgb(205, 205, 205);
+    position: absolute;
+    bottom: 3px;
+    margin-left: 30px;
+}
+
+#aru #we{
+    position: relative;
+    background-image: url(we.jpeg);
+    width: 300px;
+    height: 150px;
+}
+
+#we #shade{
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.267));
+}
+
+#we:hover #shade{
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(71, 71, 71, 0.411));
+}
+
+#aru #we h5{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    bottom: 15px;
+}
+
+#aru #we i{
+    position: absolute;
+    bottom: -5px;
+    margin: 10px;
+    color: rgb(51, 0, 255);
+}
+
+#aru #we #us{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 3px;
+    margin-left: 30px;
+}
+
+#arko{
+    display: inline-block;
+}
+
+#arko #before{
+    background-image: url(before.jpeg);
+    width: 300px;
+    height: 140px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#before #shade{
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.267));
+}
+
+#before:hover #shade{
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(71, 71, 71, 0.411));
+}
+
+#arko #before h5{
+    position: absolute;
+    color: white;
+    padding: 10px;
+    bottom: 15px;
+}
+
+#arko #before i{
+    position: absolute;
+    bottom: -5px;
+    margin: 10px;
+    color: rgb(51, 0, 255);
+}
+
+#arko #before #us{
+    color: rgb(205, 205, 205);
+    position: absolute;
+    bottom: 3px;
+    margin-left: 30px;
+}
+
+#arko #volcano{
+    background-image: url(green.jpeg);
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+#volcano #shade{
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.267));
+}
+
+#volcano:hover #shade{
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(71, 71, 71, 0.411));
+}
+
+#arko #volcano h5{
+    position: absolute;
+    color: white;
+    padding: 10px;
+    bottom: 15px;
+}
+
+#arko #volcano i{
+    position: absolute;
+    bottom: -5px;
+    margin: 10px;
+    color: rgb(0, 255, 30);
+}
+
+#arko #volcano #us{
+    color: rgb(205, 205, 205);
+    position: absolute;
+    bottom: 3px;
+    margin-left: 30px;
+}
+
+#news{
+    margin-top: 20px;
+    display: flex;
+}
+
+#news i{
+    font-size: 2rem;
+    color: green;
+    margin-top: 2px;
+}
+
+#news h1{
+    font-size: 2rem;
+    color: rgb(58, 58, 58);
+    margin-left: 20px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 32.3% 32.3% 32.3%;
+    grid-gap: 10px;
+}
+
+#grid #salute{
+    height: 300px;
+    background-image: url(salute.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#grid #salute #text{
+    position: absolute;
+    bottom: -20px;
+    color: black;
+}
+
+#grid  p{
+    color: rgb(77, 76, 76);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#grid #coma{
+    height: 300px;
+    background-image: url(coma.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#grid #coma #text{
+    position: absolute;
+    bottom: 5px;
+    color: black;
+}
+
+#grid  p{
+    color: rgb(77, 76, 76);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#grid #child{
+    height: 300px;
+    background-image: url(child.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#grid #child #text{
+    position: absolute;
+    bottom: -20px;
+    color: black;
+}
+
+#grid  p{
+    color: rgb(77, 76, 76);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#weather{
+    margin-top: 100px;
+}
+
+#top{
+    display: flex;
+}
+
+#top button{
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+
+#citi{
+    position: relative
+}
+
+#citi #city{
+    margin-top: 5px;
+    position: absolute;
+    padding: 3px;
+    padding-right: 100px;
+    left: -700px;
+}
+#weath{
+    margin-top: 30px;
+    display: flex;
+}
+
+#weath #first-text{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-weat{
+    margin-left: 15px;
+}
+
+#reels{
+    margin-top: 30px;
+    background-image: url(sean.jpeg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#reels #shade{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.564), rgba(0, 0, 0, 0.744));
+}
+
+#reel{
+    display: flex;
+    justify-content: space-between;
+}
+
+#reel #first h1{
+    font-size: 3rem;
+    margin-top: 30px;
+    color: white;
+}
+
+#reel #first p{
+    color: white;
+}
+
+#reel #visit-btn{
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1rem;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+#reel #visit-btn:hover{
+    background-color: rgb(28, 28, 28);
+}
+
+#three-reels{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 32.3% 32.3% 32.3%;
+    grid-gap: 10px;
+}
+
+#three-reels #first-reel{
+    background-image: url(first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#three-reels #second-reel{
+    background-image: url(second.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#three-reels #third-reel{
+    background-image: url(third.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#business{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+#business #nigga{
+    background-image: url(nigga.jpeg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+#business #nigga h1{
+    position: absolute;
+    top: -40px;
+}
+
+#business #nigga h2{
+    position: absolute;
+    bottom: -40px;
+}
+
+#business #old{
+    background-image: url(old.jpeg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+#business #old h1{
+    position: absolute;
+    top: -40px;
+}
+
+#business #old h2{
+    position: absolute;
+    bottom: -40px;
+}
+
+#videos{
+    margin-top: 80px;
+}
+
+#video{
+    display: flex;
+}
+
+#video i{
+    font-size: 2rem;
+    color: blue;
+    margin-top: 2px;
+}
+
+#video h1{
+    font-size: 2rem;
+    color: rgb(58, 58, 58);
+    margin-left: 20px;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #4C4C4C;
+    padding: 20px 0px;
+    color: white;
+}
